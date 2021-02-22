@@ -41,9 +41,11 @@ def tokens_to_vector(tokens: List[str], label: int) -> List[int]:
 #convert different versions of a word to the same word, e.g. Dog, dogs, doggies = dog
 wordnet_lemmatizer = WordNetLemmatizer() 
 
-#get list of words that have no predictive value (provided in file)
+# get list of words that have no predictive value (provided in file)
+# http://www.lextek.com/manuals/onix/stopwords1.html
 stopwords = set(w.strip() for w in open('stopwords.txt')) 
 
+#dataset from http://www.cs.jhu.edu/~mdredze/datasets/sentiment/index2.html
 #get review strings from XML files--we do this twice, so it might be worth putting into a function, if we intend to reuse it.
 positive_reviews = BeautifulSoup(open('electronics/positive.review').read(), features="html.parser")
 positive_reviews = positive_reviews.findAll('review_text')
