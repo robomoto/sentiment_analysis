@@ -36,7 +36,7 @@ def tokens_to_vector(tokens: List[str], label: int) -> List[int]:
         normalized_count[i] += 1
     normalized_count = normalized_count/normalized_count.sum() #normalizing data
     normalized_count[-1] = label
-    return normalized_count
+    return normalized_count 
 
 #convert different versions of a word to the same word, e.g. Dog, dogs, doggies = dog
 wordnet_lemmatizer = WordNetLemmatizer() 
