@@ -1,0 +1,22 @@
+Logistic Regression
+	Rate: 0.6962	Time: 0.58 s
+Gaussian Naive Bayes
+	Rate: 0.4012	Time: 0.37 s
+Multinomial Naive Bayes
+	Rate: 0.735	Time: 0.06 s
+Nearest Neighbors
+	Rate: 0.5575	Time: 0.02 s
+Decision Tree
+	Rate: 0.6462	Time: 0.83 s
+Random Forest
+	Rate: 0.4875	Time: 0.05 s
+Neural Net
+	Rate: 0.675	Time: 24.85 s
+AdaBoost
+	Rate: 0.7312	Time: 11.39 s
+Linear SVM
+	Rate: 0.4938	Time: 16.25 s
+RBF SVM
+	Rate: 0.6875	Time: 15.33 s
+QDA
+	Rate: 0.5238	Time: 6.13 s
